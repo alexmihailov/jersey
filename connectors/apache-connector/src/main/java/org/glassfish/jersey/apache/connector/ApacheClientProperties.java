@@ -146,6 +146,14 @@ public final class ApacheClientProperties {
     public static final String REQUEST_CONFIG = "jersey.config.apache.client.requestConfig";
 
     /**
+     * Strategy that closes the Apache Connection. Accepts an instance of {@link ApacheConnectionClosingStrategy}.
+     *
+     * @see ApacheConnectionClosingStrategy
+     * @since 2.30
+     */
+    public static final String CONNECTION_CLOSING_STRATEGY = "jersey.config.apache.client.connectionClosingStrategy";
+
+    /**
      * Get the value of the specified property.
      *
      * If the property is not set or the actual property value type is not compatible with the specified type, the method will
